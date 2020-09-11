@@ -1,1 +1,54 @@
 /* -- HEADER -- */
+.header {
+  min-height: 825px;
+
+  background: $header_bg_color url("../img/header_bg_desktop_1x.jpg") no-repeat;
+  background-size: cover;
+
+  /* -- RETINA -- */
+  @media (min-resolution: $retina) {
+    background-image: url("../img/header_bg_desktop_2x.jpg");
+  }
+}
+
+.header__top-inner {
+  min-height: 65px;
+  padding-left: 133px;
+  padding-right: 133px;
+}
+
+.header__site-nav { // .site-bav
+  margin: 0;
+}
+
+// .header__bottom {
+// }
+
+.header__bottom-inner {
+  display: flex;
+}
+
+// .header__bottom-left
+
+// .header-logo
+
+// .logo
+
+.header__page-title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: $title_color;
+}
+
+.header__slogan {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+
+  color: $slogan_color;
+}

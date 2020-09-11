@@ -3,7 +3,7 @@ $mobile_width: 320px;
 $mobile_max_width: 767px;
 $tablet_width: 768px;
 $tablet_max_width: 1023px;
-$desktop_width: 1024px;
+$desktop_width: 1440px;
 
 // Container
 $desktop_container_width: 1200px;
@@ -14,18 +14,22 @@ $tablet_padding: 0;
 $desktop_padding: 30px;
 
 // Fonts
-$primary_font_family: "Montserrat", "Arial", sans-serif;
+$primary_font_family: "Open Sans", "Arial", sans-serif;
 
 // Font colors
-$menu_color: #141517;
-$text_color: #2c2e3e;
-$text_color_07: rgba(44, 46, 63, 0.7);
-$text_color_05: rgba(44, 46, 63, 0.5);
-$text_color_03: rgba(44, 46, 63, 0.3);
-$accent_color: #fe7865;
+$menu_color: rgba(255, 255, 255, 0.7);
+$menu_border_color: rgba(255, 255, 255, 0.2);
+$title_color: #ffffff;
+$slogan_color: rgba(255, 255, 255, 0.8);
+$placeholder_color: rgba(28, 28, 28, 1);
+$text_color: #000000;
+$accent_color: #0ad9c6;
 
 // Background colors
 $primary_bg_color: #ffffff;
+$header_bg_color: #000000;
+$products_bg_color: #f6f7f9;
+$video_bg_color: #131314;
 
 // Element statements
 $hover_opacity: 0.7;

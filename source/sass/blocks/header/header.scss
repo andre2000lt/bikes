@@ -1,8 +1,12 @@
 /* -- HEADER -- */
 .header {
-  min-height: 825px;
+  display: flex;
+  flex-direction: column;
 
-  background: $header_bg_color url("../img/header_bg_desktop_1x.jpg") no-repeat;
+  min-height: 825px;
+  padding-bottom: 50px;
+
+  background: $header_bg_color url("../img/header_bg_desktop_1x.jpg") center top no-repeat;
   background-size: cover;
 
   /* -- RETINA -- */
@@ -11,31 +15,93 @@
   }
 }
 
-.header__top-inner {
-  min-height: 65px;
-  padding-left: 133px;
-  padding-right: 133px;
+.header__top {
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    display: none;
+  }
 }
 
-.header__site-nav { // .site-bav
+.header__top-inner {
+  min-height: 65px;
+  width: 77.02%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  border-bottom: 1px solid $menu_border_color;
+}
+
+
+.header__site-nav { // .site-nav
   margin: 0;
 }
 
-// .header__bottom {
-// }
+// -- MIDDLE --
+.header__middle {
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    order: -1;
+  }
+}
+
+.header__middle-inner {
+  width: 77.02%;
+  min-width: 800px;
+  margin: 0 auto;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+.header-logo {
+  position: relative;
+  bottom: -252px;
+  display: block;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    bottom: 0;
+  }
+}
+
+.header__burger {
+  width: 72px;
+}
+
+// -- BOTTOM --
+
+.header__bottom {
+  padding-top: 228px;
+}
 
 .header__bottom-inner {
   display: flex;
+  justify-content: space-between;
+
+  width: 77.02%;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
-// .header__bottom-left
+// -- BOTTOM LEFT --
 
-// .header-logo
-
-// .logo
+.header__bottom-left {
+  width: 420px;
+  padding-top: 53px;
+}
 
 .header__page-title {
   margin: 0;
+  padding-bottom: 24px;
 
   font-weight: 700;
   font-size: 46px;
@@ -52,3 +118,14 @@
 
   color: $slogan_color;
 }
+
+// -- BOTTOM RIGHT --
+
+.header__bottom-right {
+  width: 327px;
+  padding-top: 5px;
+}
+
+// .header__login {
+
+// }

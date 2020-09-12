@@ -1,0 +1,44 @@
+.burger {
+  @media (min-width: $desktop_width) {
+    display: none;
+  }
+
+  height: 50px;
+  width: 72px;
+
+  border-style: none;
+  border: none;
+
+  cursor: pointer;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:active,
+  &:focus {
+    @include button-active;
+  }
+
+  &--close {
+    background-image: url("../img/burger_close.svg");
+    background-color: $primary_bg_color;
+
+    &:hover {
+      background-color: $primary_bg_color;
+      box-shadow: 0 0 5px 1px black;
+    }
+  }
+
+  &--open {
+    background-image: url("../img/burger.svg");
+    background-color: $accent_color;
+
+    &:hover {
+      background-color: $accent_color_hover;
+    }
+  }
+
+  @media (max-width: $mobile_max_width) {
+    width: 50px;
+  }
+}

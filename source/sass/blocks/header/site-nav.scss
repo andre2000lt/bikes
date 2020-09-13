@@ -12,10 +12,29 @@
   margin-left: -20px;
 
   list-style: none;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    flex-direction: column;
+
+    padding: 0;
+    margin-left: 0;
+  }
 }
 
 .site-nav li {
   margin-left: 20px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    margin-left: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    background-color: $mobile_menu_item_color;
+  }
 }
 
 .site-nav a {
@@ -33,5 +52,34 @@
 
   &:active {
     opacity: $active_opacity;
+  }
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    display: block;
+
+    position: relative;
+
+    width: 100%;
+    padding: 17px 35px 17px 17px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: $mobile_menu_color;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+
+      width: 8px;
+      height: 12px;
+
+      background: url("../img/menu_arrow.svg") no-repeat;
+    }
   }
 }

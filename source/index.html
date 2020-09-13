@@ -13,7 +13,7 @@
   <style>
     html {
       /* Mobile layout by default */
-      background-image: url("img/models/320.png");
+      background-image: url("img/models/320_menu.jpg");
       background-repeat: no-repeat;
       background-position: 50% 0;
     }
@@ -22,7 +22,7 @@
     @media (min-width: 760px) {
       html {
         /* Tablet layout */
-        background-image: url("img/models/760.png");
+        background-image: url("img/models/768.jpg");
       }
     }
 
@@ -41,6 +41,11 @@
 
 <body>
   <header class="header">
+    <!-- Burger -->
+    <button class="header__burger burger burger--close" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+
     <!-- Header top -->
     <div class="header__top">
       <div class="container">
@@ -73,10 +78,6 @@
           <a class="header-logo">
             <img src="img/logo.svg" alt="Логотип страницы" width="68" height="21">
           </a>
-
-          <button class="header__burger burger burger--close" type="button">
-            <span class="visually-hidden">Меню</span>
-        </button>
         </div>
       </div>
 
@@ -87,10 +88,12 @@
       <div class="container">
         <div class="header__bottom-inner">
           <div class="header__bottom-left">
-            <h1 class="header__page-title">Мы продаем велосипеды</h1>
-            <p class="header__slogan">
-              Наш магазин отбирает только самые лучшие велосипеды для продажи
-            </p>
+            <div class="header__slogan-wrapper">
+              <h1 class="header__page-title">Мы продаем велосипеды</h1>
+              <p class="header__slogan">
+                Наш магазин отбирает только самые лучшие велосипеды для продажи
+              </p>
+            </div>
           </div>
 
           <div class="header__bottom-right">
@@ -116,6 +119,9 @@
     </div>
 
   </header>
+
+  <script src="js/burger.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ $mobile_width: 320px;
 $mobile_max_width: 767px;
 $tablet_width: 768px;
 $tablet_max_width: 1023px;
+$desktop_min_width: 1024px;
 $desktop_width: 1440px;
 
 // Container
@@ -18,6 +19,8 @@ $primary_font_family: "Open Sans", "Arial", sans-serif;
 
 // Font colors
 $menu_color: rgba(255, 255, 255, 0.7);
+$mobile_menu_color: #48494d;
+$mobile_menu_item_color: #f6f6f6;
 $menu_border_color: rgba(255, 255, 255, 0.2);
 $title_color: #ffffff;
 $slogan_color: rgba(255, 255, 255, 0.8);

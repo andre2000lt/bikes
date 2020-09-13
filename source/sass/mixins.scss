@@ -32,3 +32,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin small-container {
+  width: 77.02%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+@mixin small-container-tablet {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+}

@@ -1,4 +1,4 @@
-/* -- HEADER -- */
+/* --- HEADER --- */
 .header {
   display: flex;
   flex-direction: column;
@@ -6,59 +6,92 @@
   min-height: 825px;
   padding-bottom: 50px;
 
-  background: $header_bg_color url("../img/header_bg_desktop_1x.jpg") center top no-repeat;
+  background: $header_bg_color url("../img/header_bg_desktop_1x.jpg") center top
+    no-repeat;
   background-size: cover;
 
   /* -- RETINA -- */
   @media (min-resolution: $retina) {
     background-image: url("../img/header_bg_desktop_2x.jpg");
   }
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    position: relative;
+
+    background-image: none;
+    background-color: $primary_bg_color;
+  }
 }
+
+.header__burger {
+  // .burger
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+// --- TOP ---
 
 .header__top {
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+    min-height: 568px;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+
+    background-color: $primary_bg_color;
   }
 }
 
 .header__top-inner {
+  @include small-container;
+
   min-height: 65px;
-  width: 77.02%;
-  min-width: 800px;
-  margin: 0 auto;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    @include small-container-tablet;
+  }
 }
 
 .header__nav {
   border-bottom: 1px solid $menu_border_color;
 }
 
-
-.header__site-nav { // .site-nav
+.header__site-nav {  // .site-nav
   margin: 0;
 }
 
-// -- MIDDLE --
+// --- MIDDLE ---
 .header__middle {
-
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
+    position: absolute;
+    left: 21px;
+    top: 25px;
     order: -1;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    left: 19px;
   }
 }
 
 .header__middle-inner {
-  width: 77.02%;
-  min-width: 800px;
-  margin: 0 auto;
+  @include small-container;
 
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-width: 100%;
-    margin: 0;
+    @include small-container-tablet;
   }
 }
 
@@ -73,59 +106,127 @@
   }
 }
 
-.header__burger {
-  width: 72px;
-}
-
-// -- BOTTOM --
+// --- BOTTOM ---
 
 .header__bottom {
   padding-top: 228px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    padding-top: 0;
+  }
 }
 
 .header__bottom-inner {
   display: flex;
   justify-content: space-between;
 
-  width: 77.02%;
-  min-width: 800px;
-  margin: 0 auto;
+  @include small-container;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    flex-direction: column;
+
+    @include small-container-tablet;
+  }
 }
 
-// -- BOTTOM LEFT --
+// --- BOTTOM LEFT ---
 
 .header__bottom-left {
   width: 420px;
   padding-top: 53px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    width: 100%;
+    min-height: 340px;
+    padding: 134px 0 30px;
+
+    background: $header_bg_color url("../img/header_bg_tablet_1x.jpg") center
+      center no-repeat;
+    background-size: cover;
+
+    /* -- RETINA -- */
+    @media (min-resolution: $retina) {
+      background-image: url("../img/header_bg_tablet_2x.jpg");
+    }
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    min-height: 390px;
+    padding-top: 121px;
+
+    background-image: url("../img/header_bg_mobile_1x.jpg");
+
+    /* -- RETINA -- */
+    @media (min-resolution: $retina) {
+      background-image: url("../img/header_bg_mobile_2x.jpg");
+    }
+  }
+}
+
+
+.header__slogan-wrapper {
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    width: 56.64%;
+    min-width: 288px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
 }
 
 .header__page-title {
-  margin: 0;
+  width: 435px;
+  margin: 0 auto;
   padding-bottom: 24px;
 
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
   color: $title_color;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    width: auto;
+
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
 
 .header__slogan {
   margin: 0;
+  padding: 0;
 
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
 
   color: $slogan_color;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
-// -- BOTTOM RIGHT --
+// --- BOTTOM RIGHT ---
 
 .header__bottom-right {
   width: 327px;
   padding-top: 5px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    align-self: center;
+
+    width: 41.797%;
+    min-width: 288px;
+    padding-top: 70px;
+  }
 }
-
-// .header__login {
-
-// }

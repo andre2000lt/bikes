@@ -17,6 +17,7 @@
 
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
+    min-height: 740px;
     position: relative;
 
     background-image: none;

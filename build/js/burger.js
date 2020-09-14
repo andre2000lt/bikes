@@ -7,6 +7,8 @@
 
 (function () {
   var burger = document.querySelector('.burger');
+  var headerTop = document.querySelector('.header__top');
+  var header = document.querySelector('.header');
 
   function toggleBurger(action) { // action = {open, close}
     if (action === 'open') {
@@ -22,40 +24,39 @@
     }
   }
 
-  window.burger = {
-    init: function () {
-      toggleBurger('close');
-      console.log(burger.className);
+  function toggleMenu(action) { // action = {hide, show}
+    if (action === 'hide') {
+      if (headerTop.classList.contains('header__top--tablet-visible')) {
+        headerTop.classList.remove('header__top--tablet-visible');
+      }
     }
-  };
+
+    if (action === 'show') {
+      if (!headerTop.classList.contains('header__top--tablet-visible')) {
+        headerTop.classList.add('header__top--tablet-visible');
+      }
+    }
+  }
+
+  function hideMenu() {
+    toggleMenu('hide');
+
+    toggleBurger('open');
+  }
+
+
+  function showMenu() {
+    toggleMenu('show');
+    toggleBurger('close');
+  }
+
+  header.onload = hideMenu();
+
+  burger.addEventListener('click', function () {
+    if (burger.classList.contains('burger--open')) {
+      showMenu();
+    } else {
+      hideMenu();
+    }
+  });
 })();
-
-// function toggleMenu(action) { // action = {hide, show}
-//     if (action === 'hide' ) {
-//         if (headerNav.classList.contains('header__nav--tablet-visible')) {
-//             headerNav.classList.remove('header__nav--tablet-visible')
-//         }
-//     }
-
-//     if (action === 'show' ) {
-//         if (!headerNav.classList.contains('header__nav--tablet-visible')) {
-//             headerNav.classList.add('header__nav--tablet-visible')
-//         }
-//     }
-// }
-
-// function toggleLogo(action) { // action = {hide, show}
-//     if (action === 'hide' ) {
-//         if (!logo.classList.contains('logo--hidden')) {
-//             logo.classList.add('logo--hidden')
-//         }
-//     }
-
-//     if (action === 'show' ) {
-//         if (logo.classList.contains('logo--hidden')) {
-//             logo.classList.remove('logo--hidden');
-//         }
-//     }
-// }
-
-

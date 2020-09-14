@@ -1,0 +1,21 @@
+/* --- Section Title --- */
+
+.section-title {
+  margin: 0;
+
+  @include general-font-family();
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $section_title_color;
+
+  &--light {
+    color: $primary_bg_color;
+  }
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+}

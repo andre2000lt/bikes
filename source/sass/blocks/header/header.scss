@@ -48,6 +48,14 @@
     padding-top: 100px;
 
     background-color: $primary_bg_color;
+
+    &--tablet-hidden {
+      display: none;
+    }
+
+    &--tablet-visible {
+      display: block;
+    }
   }
 }
 
@@ -66,7 +74,8 @@
   border-bottom: 1px solid $menu_border_color;
 }
 
-.header__site-nav {  // .site-nav
+.header__site-nav {
+  // .site-nav
   margin: 0;
 }
 
@@ -166,7 +175,6 @@
     }
   }
 }
-
 
 .header__slogan-wrapper {
   /* -- TABLET -- */

@@ -1,0 +1,47 @@
+/* --- ВИДЕО ПРО ВЕЛОСИПЕДЫ --- */
+
+.video {
+  padding-top: 123px;
+
+  background-color: $video_bg_color;
+}
+
+.video__inner {
+  width: 64.514%;
+  margin: 0 auto;
+}
+
+.video__title {
+  margin-left: -10px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.video__subtitle {
+  width: 340px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $title_color;
+
+  text-align: center;
+
+  opacity: 0.7;
+}
+
+.video__image {
+  position: relative;
+}
+
+.video__image img {
+  width: 100%;
+  height: auto;
+}
+
+.video__play-button {
+  position: absolute;
+}

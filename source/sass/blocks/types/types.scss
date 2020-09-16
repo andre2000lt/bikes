@@ -1,12 +1,13 @@
 .types {
   min-height: 1038px;
   padding-top: 152px;
+  padding-bottom: 15px;
 
   background-color: $products_bg_color;
 
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
-    min-height: 949px;
+    min-height: 945px;
     padding-top: 45px;
   }
 

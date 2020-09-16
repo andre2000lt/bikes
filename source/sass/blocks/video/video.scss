@@ -2,13 +2,40 @@
 
 .video {
   padding-top: 123px;
+  padding-bottom: 40px;
 
   background-color: $video_bg_color;
+  background-image: linear-gradient(to bottom, $video_bg_color 83.294%, $primary_bg_color 16.706%);
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    padding-top: 64px;
+    padding-bottom: 20px;
+
+    background-image: linear-gradient(to bottom, $video_bg_color 79%, $primary_bg_color 21%);
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    padding-top: 74px;
+
+    background-image: linear-gradient(to bottom, $video_bg_color 83%, $primary_bg_color 27%);
+  }
 }
 
 .video__inner {
   width: 64.514%;
   margin: 0 auto;
+
+  /* -- TABLET-- */
+  @media (max-width: $tablet_max_width) {
+    width: 65.495%;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    width: 90%;
+  }
 }
 
 .video__title {
@@ -16,6 +43,17 @@
   margin-bottom: 20px;
 
   text-align: center;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    margin-left: 0;
+    margin-bottom: 17px;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    margin-left: -12px;
+  }
 }
 
 .video__subtitle {
@@ -31,6 +69,18 @@
   text-align: center;
 
   opacity: 0.7;
+
+  /* -- TABLET-- */
+  @media (max-width: $tablet_max_width) {
+    width: 85.288%;
+    margin-bottom: 40px;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    width: 100%;
+    margin-bottom: 55px;
+  }
 }
 
 .video__image {
@@ -44,4 +94,36 @@
 
 .video__play-button {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 65px;
+  height: 65px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: $accent_color url("../img/button_arrow.svg") no-repeat center center;
+
+  &:hover {
+    opacity: $hover_opacity;
+  }
+
+  &:active {
+    opacity: $active_opacity;
+  }
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+
+    /* -- TABLET ONLY-- */
+    @media (min-width: $tablet_max_width) {
+      width: 90px;
+      height: 90px;
+
+      background-size: 18px 28px;
+      background-position: 40px center;
+    }
+  }
 }

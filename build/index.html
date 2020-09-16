@@ -203,6 +203,9 @@
     </div>
   </section>
 
+
+  <!-- ВИДЕО ПРО ВЕЛОСИПЕДЫ -->
+
   <section class="video">
     <div class="video__inner">
       <h2 class="section-title section-title--light video__title">Видео про велосипеды</h2>
@@ -211,12 +214,16 @@
       </p>
       <div class="video__image">
         <picture>
-          <!-- Mobile and Tablet .webp -->
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/bike_video_mobile_1x.webp 1x, img/content/bike_video_mobile_2x.webp 2x">
+          <!-- Mobile .webp -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/content/bike_video_mobile_1x.webp 1x, img/content/bike_video_mobile_2x.webp 2x">
+          <!-- Tablet .webp -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/bike_video_tablet_1x.webp 1x, img/content/bike_video_tablet_2x.webp 2x">
           <!-- Desktop .webp -->
           <source type="image/webp" srcset="img/content/bike_video_desktop_1x.webp 1x, img/content/bike_video_desktop_2x.webp 2x">
-          <!-- Mobile and Tablet .jpg -->
-          <source srcset="img/content/bike_video_mobile_1x.jpg 1x, img/content/bike_video_mobile_2x.jpg 2x" media="(max-width: 1023px)">
+          <!-- Mobile .jpg -->
+          <source srcset="img/content/bike_video_mobile_1x.jpg 1x, img/content/bike_video_mobile_2x.jpg 2x" media="(max-width: 767px)">
+          <!-- Tablet .jpg -->
+          <source srcset="img/content/bike_video_tablet_1x.jpg 1x, img/content/bike_video_tablet_2x.jpg 2x" media="(max-width: 1023px)">
           <!-- Desktop .jpg -->
           <img src="img/content/bike_video_desktop_1x.jpg" srcset="img/content/bike_video_desktop_2x.jpg 2x" alt="Картинка велосипеда">
         </picture>
@@ -227,6 +234,44 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <section class="contacts">
+      <div class="contacts__inner">
+        <h2 class="section-title contacts__title">Как нас найти?</h2>
+
+        <p class="contacts__subtitle">
+          Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+        </p>
+
+        <div class="contacts__map">
+          <picture>
+            <!-- Mobile .webp -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/content/map_mobile_1x.webp 1x, img/content/map_mobile_2x.webp 2x">
+            <!-- Tablet .webp -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/map_tablet_1x.webp 1x, img/content/map_tablet_2x.webp 2x">
+            <!-- Desktop .webp -->
+            <source type="image/webp" srcset="img/content/map_desktop_1x.webp 1x, img/content/map_desktop_2x.webp 2x">
+            <!-- Mobile .jpg -->
+            <source srcset="img/content/map_mobile_1x.jpg 1x, img/content/map_mobile_2x.jpg 2x" media="(max-width: 767px)">
+            <!-- Tablet .jpg -->
+            <source srcset="img/content/map_tablet_1x.jpg 1x, img/content/map_tablet_2x.jpg 2x" media="(max-width: 1023px)">
+            <!-- Desktop .jpg -->
+            <img src="img/content/map_desktop_1x.jpg" srcset="img/content/map_desktop_2x.jpg 2x" alt="Картинка велосипеда">
+          </picture>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="footer__bottom container">
+      <div class="footer__bottom-wrapper">
+        <a class="footer__email" href="mailto: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="footer__phone" href="tel:+7(499)78468446">+7 (499) -784-684-46</a>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="js/burger.js"></script>
   <script src="js/script.js"></script>

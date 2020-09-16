@@ -1,0 +1,141 @@
+/* --- HEADER --- */
+.footer {
+  padding-top: 110px;
+  padding-bottom: 91px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    padding-top: 39px;
+    padding-bottom: 43px;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    padding-bottom: 27px;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 33px;
+  padding-right: 10px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    padding-top: 18px;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    padding-right: 0;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    padding-top: 28px;
+  }
+}
+
+.footer__bottom-wrapper {
+  display: flex;
+  margin-left: -32px;
+
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    margin-left: 0;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+}
+
+.footer__email {
+  position: relative;
+
+  display: block;
+
+  margin-right: 92px;
+  padding-left: 38px;
+
+  @include general-font-family();
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+
+  color: $footer_mail_color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -3px;
+
+    width: 26px;
+    height: 20px;
+
+    background: url("../img/mail.svg") no-repeat;
+  }
+
+  &:hover {
+    opacity: $hover_opacity;
+  }
+
+  &:active {
+    opacity: $active_opacity;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    margin-bottom: 22px;
+    margin-right: -8px;
+  }
+}
+
+.footer__phone {
+  position: relative;
+
+  display: block;
+
+  padding-left: 38px;
+
+  @include general-font-family();
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: normal;
+
+  color: $footer_mail_color;
+
+  &:hover {
+    opacity: $hover_opacity;
+  }
+
+  &:active {
+    opacity: $active_opacity;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 22px;
+    height: 24px;
+
+    background: url("../img/phone.svg") no-repeat;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    margin-left: -5px;
+  }
+}

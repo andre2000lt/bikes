@@ -68,4 +68,14 @@
   border-radius: 6px;
 
   background-color: $accent_color;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: $hover_opacity;
+  }
+
+  &:active {
+    opacity: $active_opacity;
+  }
 }

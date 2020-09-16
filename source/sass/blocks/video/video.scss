@@ -4,7 +4,7 @@
   padding-top: 123px;
   padding-bottom: 40px;
 
-  background-color: $video_bg_color;
+  background-color: $primary_bg_color;
   background-image: linear-gradient(to bottom, $video_bg_color 83.294%, $primary_bg_color 16.706%);
 
   /* -- TABLET -- */
@@ -25,6 +25,7 @@
 
 .video__inner {
   width: 64.514%;
+  max-width: 929px;
   margin: 0 auto;
 
   /* -- TABLET-- */

@@ -285,6 +285,14 @@
 
   text-align: center;
 
+  &:hover {
+    opacity: $hover_opacity;
+  }
+
+  &:active {
+    opacity: $active_opacity;
+  }
+
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
     margin-top: 18px;

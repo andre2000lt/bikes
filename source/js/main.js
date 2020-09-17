@@ -50,13 +50,16 @@
     toggleBurger('close');
   }
 
-  header.onload = hideMenu();
+  if (burger) {
+    header.onload = hideMenu();
 
-  burger.addEventListener('click', function () {
-    if (burger.classList.contains('burger--open')) {
-      showMenu();
-    } else {
-      hideMenu();
-    }
-  });
+    burger.addEventListener('click', function () {
+      if (burger.classList.contains('burger--open')) {
+        showMenu();
+      } else {
+        hideMenu();
+      }
+    });
+  }
+
 })();

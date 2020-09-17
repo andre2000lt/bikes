@@ -28,7 +28,7 @@
   }
 }
 
-.types__title {
+.types h2 {
   padding: 0;
   padding-right: 25px;
   margin-bottom: 52px;
@@ -280,7 +280,7 @@
   height: auto;
 }
 
-.types__photo-title {
+.types__item p {
   margin: 0;
 
   text-align: center;
@@ -299,7 +299,7 @@
   }
 }
 
-.types__photo-title a {
+.types__photo ~ p a {
   @include general-font-family();
   font-weight: 600;
   font-size: 22px;

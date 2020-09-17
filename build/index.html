@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов</title>
+  <link rel="“preload”" href="“fonts/opensans/opensans-300.woff”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-300.woff2”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-400.woff”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-400.woff2”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-600.woff”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-600.woff2”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-700.woff”" as="“font”">
+  <link rel="“preload”" href="“fonts/opensans/opensans-700.woff2”" as="“font”">
+
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
 
@@ -53,16 +62,16 @@
           <nav class="header__nav">
             <ul class="header__site-nav site-nav">
               <li>
-                <a href="">О нас</a>
+                <a href="#about-us">О нас</a>
               </li>
               <li>
-                <a href="">Виды велосипедов</a>
+                <a href="#types">Виды велосипедов</a>
               </li>
               <li>
-                <a href="">Видео про велосипеды</a>
+                <a href="#video">Видео про велосипеды</a>
               </li>
               <li>
-                <a href="">Контакты</a>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -89,8 +98,8 @@
         <div class="header__bottom-inner">
           <div class="header__bottom-left">
             <div class="header__slogan-wrapper">
-              <h1 class="header__page-title">Мы продаем велосипеды</h1>
-              <p class="header__slogan">
+              <h1>Мы продаем велосипеды</h1>
+              <p>
                 Наш магазин отбирает только самые лучшие велосипеды для продажи
               </p>
             </div>
@@ -101,7 +110,7 @@
               <p class="login-form__label">
                 Заполните поля ниже и мы подберем велосипед Вашей мечты
               </p>
-              <form action="" method="POST">
+              <form action="/" method="POST">
                 <label class="visually-hidden" for="email">Введите email</label>
                 <input type="email" name="email" id="email" placeholder="Введите Ваше Имя" required="">
 
@@ -121,7 +130,7 @@
 
   <!-- ФАКТЫ О НАС -->
 
-  <section class="facts">
+  <section class="facts" id="about-us">
     <div class="container facts__inner">
       <h2 class="facts__title section-title">Несколько фактов о нас</h2>
 
@@ -136,15 +145,21 @@
 
   <!-- ВИДЫ ВЕЛОСИПЕДОВ -->
 
-  <section class="types">
+  <section class="types" id="types">
 
     <div class="container types__inner">
-      <h2 class="types__title section-title">Виды велосипедов</h2>
+      <h2 class="section-title">Виды велосипедов</h2>
 
       <ul class="types__list">
         <li class="types__item">
           <div class="types__photo types__photo--big-circle">
             <picture>
+              <!-- Mobile and Tablet 1x 270x300-->
+              <!-- Mobile and Tablet 2x 540x600-->
+
+              <!-- Desktop 1x 342x503-->
+              <!-- Desktop 2x 684x1006-->
+
               <!-- Mobile and Tablet .webp -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/road_bike_mobile_1x.webp 1x, img/content/road_bike_mobile_2x.webp 2x">
               <!-- Desktop .webp -->
@@ -156,7 +171,7 @@
             </picture>
           </div>
 
-          <p class="types__photo-title">
+          <p>
             <a href="">Дорожный велосипед</a>
           </p>
         </li>
@@ -164,6 +179,13 @@
         <li class="types__item">
           <div class="types__photo types__photo--square">
             <picture>
+              <!-- Mobile and Tablet 1x 270x300-->
+              <!-- Mobile and Tablet 2x 540x600-->
+
+              <!-- Desktop 1x 342x503-->
+              <!-- Desktop 2x 684x1006-->
+
+
               <!-- Mobile and Tablet .webp -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/mountain_bike_mobile_1x.webp 1x, img/content/mountain_bike_mobile_2x.webp 2x">
               <!-- Desktop .webp -->
@@ -175,7 +197,7 @@
             </picture>
           </div>
 
-          <p class="types__photo-title">
+          <p>
             <a href="">Горный велосипед</a>
           </p>
         </li>
@@ -183,6 +205,13 @@
         <li class="types__item">
           <div class="types__photo types__photo--small-circle">
             <picture>
+              <!-- Mobile and Tablet 1x 270x300-->
+              <!-- Mobile and Tablet 2x 540x600-->
+
+              <!-- Desktop 1x 342x503-->
+              <!-- Desktop 2x 684x1006-->
+
+
               <!-- Mobile and Tablet .webp -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/children_bike_mobile_1x.webp 1x, img/content/children_bike_mobile_2x.webp 2x">
               <!-- Desktop .webp -->
@@ -194,7 +223,7 @@
             </picture>
           </div>
 
-          <p class="types__photo-title">
+          <p>
             <a href="">Детский велосипед</a>
           </p>
         </li>
@@ -206,14 +235,23 @@
 
   <!-- ВИДЕО ПРО ВЕЛОСИПЕДЫ -->
 
-  <section class="video">
+  <section class="video" id="video">
     <div class="video__inner">
-      <h2 class="section-title section-title--light video__title">Видео про велосипеды</h2>
+      <h2 class="section-title section-title--light">Видео про велосипеды</h2>
       <p class="video__subtitle">
         В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
       </p>
       <div class="video__image">
         <picture>
+              <!-- Mobile 1x 288x162-->
+              <!-- Mobile 2x 576x324-->
+
+              <!-- Tablet 1x 503x282-->
+              <!-- Tablet 2x 1006x564-->
+
+              <!-- Desktop 1x 929x522-->
+              <!-- Desktop 2x 1858x2012-->
+
           <!-- Mobile .webp -->
           <source type="image/webp" media="(max-width: 767px)" srcset="img/content/bike_video_mobile_1x.webp 1x, img/content/bike_video_mobile_2x.webp 2x">
           <!-- Tablet .webp -->
@@ -238,7 +276,7 @@
   <footer class="footer">
     <section class="contacts">
       <div class="contacts__inner">
-        <h2 class="section-title contacts__title">Как нас найти?</h2>
+        <h2 class="section-title contacts">Как нас найти?</h2>
 
         <p class="contacts__subtitle">
           Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
@@ -246,6 +284,15 @@
 
         <div class="contacts__map">
           <picture>
+              <!-- Mobile 1x 320x250-->
+              <!-- Mobile 2x 640x500-->
+
+              <!-- Tablet 1x 698x545-->
+              <!-- Tablet 2x 1396x1090-->
+
+              <!-- Desktop 1x 957x530-->
+              <!-- Desktop 2x 1914x1060-->
+
             <!-- Mobile .webp -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/content/map_mobile_1x.webp 1x, img/content/map_mobile_2x.webp 2x">
             <!-- Tablet .webp -->
@@ -266,15 +313,14 @@
 
     <div class="footer__bottom container">
       <div class="footer__bottom-wrapper">
-        <a class="footer__email" href="mailto: puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="footer__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         <a class="footer__phone" href="tel:+7(499)78468446">+7 (499) -784-684-46</a>
       </div>
 
     </div>
   </footer>
 
-  <script src="js/burger.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

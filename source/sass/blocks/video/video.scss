@@ -119,7 +119,7 @@
   @media (max-width: $tablet_max_width) {
 
     /* -- TABLET ONLY-- */
-    @media (min-width: $tablet_max_width) {
+    @media (min-width: $tablet_width) {
       width: 90px;
       height: 90px;
 

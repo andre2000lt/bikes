@@ -29,6 +29,15 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("copy_css", function () {
+  return gulp.src("source/sass/style.scss")
+  .pipe(plumber())
+  .pipe(sass())
+  .pipe(postcss([autoprefixer()]))
+  .pipe(rename("style.css"))
+  .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -99,5 +108,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "copy_css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

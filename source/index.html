@@ -17,35 +17,6 @@
 
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
-
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      /* Mobile layout by default */
-      background-image: url("img/models/320.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-    }
-
-    /* Tablet */
-    @media (min-width: 760px) {
-      html {
-        /* Tablet layout */
-        background-image: url("img/models/768.jpg");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 1440px) {
-      html {
-        /* Desktop layout */
-        background-image: url("img/models/1440.jpg");
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -154,26 +125,19 @@
       <ul class="types__list">
         <li class="types__item">
           <div class="types__photo types__photo--big-circle">
-            <picture>
-              <!-- Mobile and Tablet 1x 270x300-->
-              <!-- Mobile and Tablet 2x 540x600-->
+            <div class="types__photo-wrapper">
+              <picture>
+                <!-- Desktop 1x 342x503-->
+                <!-- Desktop 2x 684x1006-->
 
-              <!-- Desktop 1x 342x503-->
-              <!-- Desktop 2x 684x1006-->
-
-              <!-- Mobile and Tablet .webp -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/content/road_bike_mobile_1x.webp 1x, img/content/road_bike_mobile_2x.webp 2x">
-              <!-- Desktop .webp -->
-              <source type="image/webp"
-                srcset="img/content/road_bike_desktop_1x.webp 1x, img/content/road_bike_desktop_2x.webp 2x">
-              <!-- Mobile and Tablet .jpg -->
-              <source srcset="img/content/road_bike_mobile_1x.jpg 1x, img/content/road_bike_mobile_2x.jpg 2x"
-                media="(max-width: 1023px)">
-              <!-- Desktop .jpg -->
-              <img src="img/content/road_bike_desktop_1x.jpg" srcset="img/content/road_bike_desktop_2x.jpg 2x"
-                alt="Дорожный велосипед">
-            </picture>
+                <!-- Desktop .webp -->
+                <source type="image/webp"
+                  srcset="img/content/road_bike_desktop_1x.webp 1x, img/content/road_bike_desktop_2x.webp 2x">
+                <!-- Desktop .jpg -->
+                <img src="img/content/road_bike_desktop_1x.jpg" srcset="img/content/road_bike_desktop_2x.jpg 2x"
+                  alt="Дорожный велосипед">
+              </picture>
+            </div>
           </div>
 
           <p>
@@ -183,27 +147,19 @@
 
         <li class="types__item">
           <div class="types__photo types__photo--square">
-            <picture>
-              <!-- Mobile and Tablet 1x 270x300-->
-              <!-- Mobile and Tablet 2x 540x600-->
+            <div class="types__photo-wrapper">
+              <picture>
+                <!-- Desktop 1x 342x503-->
+                <!-- Desktop 2x 684x1006-->
 
-              <!-- Desktop 1x 342x503-->
-              <!-- Desktop 2x 684x1006-->
-
-
-              <!-- Mobile and Tablet .webp -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/content/mountain_bike_mobile_1x.webp 1x, img/content/mountain_bike_mobile_2x.webp 2x">
-              <!-- Desktop .webp -->
-              <source type="image/webp"
-                srcset="img/content/mountain_bike_desktop_1x.webp 1x, img/content/mountain_bike_desktop_2x.webp 2x">
-              <!-- Mobile and Tablet .jpg -->
-              <source srcset="img/content/mountain_bike_mobile_1x.jpg 1x, img/content/mountain_bike_mobile_2x.jpg 2x"
-                media="(max-width: 1023px)">
-              <!-- Desktop .jpg -->
-              <img src="img/content/mountain_bike_desktop_1x.jpg" srcset="img/content/mountain_bike_desktop_2x.jpg 2x"
-                alt="Горный велосипед">
-            </picture>
+                <!-- Desktop .webp -->
+                <source type="image/webp"
+                  srcset="img/content/mountain_bike_desktop_1x.webp 1x, img/content/mountain_bike_desktop_2x.webp 2x">
+                <!-- Desktop .jpg -->
+                <img src="img/content/mountain_bike_desktop_1x.jpg" srcset="img/content/mountain_bike_desktop_2x.jpg 2x"
+                  alt="Горный велосипед">
+              </picture>
+            </div>
           </div>
 
           <p>
@@ -213,27 +169,19 @@
 
         <li class="types__item">
           <div class="types__photo types__photo--small-circle">
-            <picture>
-              <!-- Mobile and Tablet 1x 270x300-->
-              <!-- Mobile and Tablet 2x 540x600-->
+            <div class="types__photo-wrapper">
+              <picture>
+                <!-- Desktop 1x 342x503-->
+                <!-- Desktop 2x 684x1006-->
 
-              <!-- Desktop 1x 342x503-->
-              <!-- Desktop 2x 684x1006-->
-
-
-              <!-- Mobile and Tablet .webp -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/content/children_bike_mobile_1x.webp 1x, img/content/children_bike_mobile_2x.webp 2x">
-              <!-- Desktop .webp -->
-              <source type="image/webp"
-                srcset="img/content/children_bike_desktop_1x.webp 1x, img/content/children_bike_desktop_2x.webp 2x">
-              <!-- Mobile and Tablet .jpg -->
-              <source srcset="img/content/children_bike_mobile_1x.jpg 1x, img/content/children_bike_mobile_2x.jpg 2x"
-                media="(max-width: 1023px)">
-              <!-- Desktop .jpg -->
-              <img src="img/content/children_bike_desktop_1x.jpg" srcset="img/content/children_bike_desktop_2x.jpg 2x"
-                alt="Детский велосипед">
-            </picture>
+                <!-- Desktop .webp -->
+                <source type="image/webp"
+                  srcset="img/content/children_bike_desktop_1x.webp 1x, img/content/children_bike_desktop_2x.webp 2x">
+                <!-- Desktop .jpg -->
+                <img src="img/content/children_bike_desktop_1x.jpg" srcset="img/content/children_bike_desktop_2x.jpg 2x"
+                  alt="Детский велосипед">
+              </picture>
+            </div>
           </div>
 
           <p>
@@ -255,35 +203,22 @@
         В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.
       </p>
       <div class="video__image">
-        <picture>
-              <!-- Mobile 1x 288x162-->
-              <!-- Mobile 2x 576x324-->
+        <div class="video__image-wrapper">
+          <picture>
 
-              <!-- Tablet 1x 503x282-->
-              <!-- Tablet 2x 1006x564-->
+            <!-- Desktop 1x 929x522-->
+            <!-- Desktop 2x 1858x2012-->
 
-              <!-- Desktop 1x 929x522-->
-              <!-- Desktop 2x 1858x2012-->
+            <!-- Desktop .webp -->
+            <source type="image/webp"
+              srcset="img/content/bike_video_desktop_1x.webp 1x, img/content/bike_video_desktop_2x.webp 2x">
 
-          <!-- Mobile .webp -->
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/content/bike_video_mobile_1x.webp 1x, img/content/bike_video_mobile_2x.webp 2x">
-          <!-- Tablet .webp -->
-          <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/content/bike_video_tablet_1x.webp 1x, img/content/bike_video_tablet_2x.webp 2x">
-          <!-- Desktop .webp -->
-          <source type="image/webp"
-            srcset="img/content/bike_video_desktop_1x.webp 1x, img/content/bike_video_desktop_2x.webp 2x">
-          <!-- Mobile .jpg -->
-          <source srcset="img/content/bike_video_mobile_1x.jpg 1x, img/content/bike_video_mobile_2x.jpg 2x"
-            media="(max-width: 767px)">
-          <!-- Tablet .jpg -->
-          <source srcset="img/content/bike_video_tablet_1x.jpg 1x, img/content/bike_video_tablet_2x.jpg 2x"
-            media="(max-width: 1023px)">
-          <!-- Desktop .jpg -->
-          <img src="img/content/bike_video_desktop_1x.jpg" srcset="img/content/bike_video_desktop_2x.jpg 2x"
-            alt="Картинка велосипеда">
-        </picture>
+            <!-- Desktop .jpg -->
+            <img src="img/content/bike_video_desktop_1x.jpg" srcset="img/content/bike_video_desktop_2x.jpg 2x"
+              alt="Картинка велосипеда">
+          </picture>
+        </div>
+
 
         <button class="video__play-button">
           <span class="visually-hidden">Запуск</span>
@@ -302,35 +237,17 @@
         </p>
 
         <div class="contacts__map">
-          <picture>
-              <!-- Mobile 1x 320x250-->
-              <!-- Mobile 2x 640x500-->
-
-              <!-- Tablet 1x 698x545-->
-              <!-- Tablet 2x 1396x1090-->
-
+          <div class="contacts__map-wrapper">
+            <picture>
               <!-- Desktop 1x 957x530-->
               <!-- Desktop 2x 1914x1060-->
 
-            <!-- Mobile .webp -->
-            <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/content/map_mobile_1x.webp 1x, img/content/map_mobile_2x.webp 2x">
-            <!-- Tablet .webp -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/content/map_tablet_1x.webp 1x, img/content/map_tablet_2x.webp 2x">
-            <!-- Desktop .webp -->
-            <source type="image/webp"
-              srcset="img/content/map_desktop_1x.webp 1x, img/content/map_desktop_2x.webp 2x">
-            <!-- Mobile .jpg -->
-            <source srcset="img/content/map_mobile_1x.jpg 1x, img/content/map_mobile_2x.jpg 2x"
-              media="(max-width: 767px)">
-            <!-- Tablet .jpg -->
-            <source srcset="img/content/map_tablet_1x.jpg 1x, img/content/map_tablet_2x.jpg 2x"
-              media="(max-width: 1023px)">
-            <!-- Desktop .jpg -->
-            <img src="img/content/map_desktop_1x.jpg" srcset="img/content/map_desktop_2x.jpg 2x"
-              alt="Мы на карте">
-          </picture>
+              <!-- Desktop .webp -->
+              <source type="image/webp" srcset="img/content/map_desktop_1x.webp 1x, img/content/map_desktop_2x.webp 2x">
+              <!-- Desktop .jpg -->
+              <img src="img/content/map_desktop_1x.jpg" srcset="img/content/map_desktop_2x.jpg 2x" alt="Мы на карте">
+            </picture>
+          </div>
         </div>
       </div>
 

@@ -270,6 +270,19 @@
   }
 }
 
+.types__photo-wrapper {
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    display: flex;
+    align-items: center;
+    height: 300px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+  }
+}
+
 .types__item img {
   position: relative;
   z-index: 3;

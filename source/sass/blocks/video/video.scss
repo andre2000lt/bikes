@@ -88,6 +88,22 @@
   position: relative;
 }
 
+.video__image-wrapper {
+  /* -- TABLET -- */
+  @media (max-width: $tablet_max_width) {
+    display: flex;
+    align-items: center;
+    height: 282px;
+
+    overflow: hidden;
+  }
+
+  /* -- MOBILE -- */
+  @media (max-width: $mobile_max_width) {
+    height: 162px;
+  }
+}
+
 .video__image img {
   width: 100%;
   height: auto;

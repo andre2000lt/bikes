@@ -111,6 +111,8 @@
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
     width: 47.133%;
+    padding-left: 0;
+    padding-right: 0;
 
     /* -- TABLET ONLY-- */
     @media (min-width: $tablet_width) {

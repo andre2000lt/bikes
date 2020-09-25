@@ -93,14 +93,14 @@
   @media (max-width: $tablet_max_width) {
     display: flex;
     align-items: center;
-    height: 282px;
+    height: 36.801%;
 
     overflow: hidden;
   }
 
   /* -- MOBILE -- */
   @media (max-width: $mobile_max_width) {
-    height: 162px;
+    height: 50.566%;
   }
 }
 
@@ -114,6 +114,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  cursor: pointer;
 
   width: 65px;
   height: 65px;

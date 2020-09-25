@@ -18,6 +18,8 @@ body {
   @include general-font-family();
 
   background-color: $primary_bg_color;
+
+  overflow-x: hidden;
 }
 
 .visually-hidden {

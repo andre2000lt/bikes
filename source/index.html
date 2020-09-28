@@ -18,40 +18,12 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
 
-    <!-- Pixel Glass -->
-  <style>
-    html {
-      /* Mobile layout by default */
-      background-image: url("img/models/320.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-    }
-
-    /* Tablet */
-    @media (min-width: 760px) {
-      html {
-        /* Tablet layout */
-        background-image: url("img/models/768.jpg");
-      }
-    }
-
-    /* Desktop */
-    @media (min-width: 1440px) {
-      html {
-        /* Desktop layout */
-        background-image: url("img/models/1440.jpg");
-      }
-    }
-  </style>
-  <link href="pixel-glass/styles.css" rel="stylesheet">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body>
   <header class="header">
     <!-- Burger -->
-    <button class="header__burger burger burger--close" type="button">
+    <button class="header__burger burger burger--close burger--hidden" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
 
@@ -80,23 +52,17 @@
       </div>
     </div>
 
-    <!-- Header Middle -->
-    <div class="header__middle">
-      <div class="container">
-        <div class="header__middle-inner">
-          <a class="header-logo">
-            <img src="img/logo.svg" alt="Логотип страницы" width="68" height="21">
-          </a>
-        </div>
-      </div>
-
-    </div>
 
     <!-- Header bottom -->
     <div class="header__bottom">
       <div class="container">
         <div class="header__bottom-inner">
           <div class="header__bottom-left">
+            <!-- Лого -->
+            <a class="header-logo">
+              <img src="img/logo.svg" alt="Логотип страницы" width="68" height="21">
+            </a>
+
             <div class="header__slogan-wrapper">
               <h1>Мы продаем велосипеды</h1>
               <p>
@@ -136,10 +102,18 @@
       <h2 class="facts__title section-title">Несколько фактов о нас</h2>
 
       <ul class="facts__list">
-        <li>Самый широкий выбор велосипедов!</li>
-        <li>Доставка велосипедов по всей России!</li>
-        <li>Большой выбор крутых аксессуаров!</li>
-        <li>Профессиональные консультации!</li>
+        <li>
+          <p>Самый широкий выбор велосипедов!</p>
+        </li>
+        <li>
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
+        <li>
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li>
+          <p>Профессиональные консультации!</p>
+        </li>
       </ul>
     </div>
   </section>

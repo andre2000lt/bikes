@@ -1,12 +1,12 @@
 /* --- HEADER --- */
 .footer {
   padding-top: 110px;
-  padding-bottom: 91px;
+  padding-bottom: 81px;
 
   /* -- TABLET -- */
   @media (max-width: $tablet_max_width) {
     padding-top: 39px;
-    padding-bottom: 43px;
+    padding-bottom: 33px;
   }
 
   /* -- MOBILE -- */
@@ -63,6 +63,7 @@
 
 .footer__bottom-item {
   margin-left: 92px;
+  margin-bottom: 10px;
 
   /* -- MOBILE -- */
   @media (max-width: $mobile_max_width) {

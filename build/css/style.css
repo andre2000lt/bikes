@@ -958,13 +958,13 @@ body {
 /* --- HEADER --- */
 .footer {
   padding-top: 110px;
-  padding-bottom: 91px;
+  padding-bottom: 81px;
   /* -- TABLET -- */
   /* -- MOBILE -- */ }
   @media (max-width: 1023px) {
     .footer {
       padding-top: 39px;
-      padding-bottom: 43px; } }
+      padding-bottom: 33px; } }
   @media (max-width: 767px) {
     .footer {
       padding-bottom: 27px; } }
@@ -1018,6 +1018,7 @@ body {
 
 .footer__bottom-item {
   margin-left: 92px;
+  margin-bottom: 10px;
   /* -- MOBILE -- */ }
   @media (max-width: 767px) {
     .footer__bottom-item {
